@@ -7,18 +7,18 @@
 body {
   width: 100vw;
   min-width: 375px;
-  height: 100vh;
   min-height: 100vh;
 }
 .container {
   width: 100vw;
   min-width: 375px;
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 100vh;
   background-color: hsl(217, 54%, 11%);
   display: flex;
 }
 .card {
+  position: relative;
   width: 330px;
   height: 550px;
   background-color: hsl(216, 50%, 16%);
@@ -33,6 +33,27 @@ body {
   height: 290px;
   /* margin: 20px; */
   border-radius: 10px;
+}
+.hover-class {
+  position: absolute;
+  background-image: url("./images/icon-view.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+
+  top: 20px;
+  left: 20px;
+  width: 290px;
+  height: 290px;
+  /* border: solid; */
+  background-color: hsla(178, 100%, 50%, 0.253);
+  z-index: 10;
+  display: none;
+}
+.hover-class:hover,
+.cube-image:hover + .hover-class {
+  display: block;
+  cursor: pointer;
 }
 .title {
   font-weight: 700;
@@ -100,7 +121,6 @@ body {
 .created-by {
   display: flex;
   flex-direction: row;
-
   margin: 10px 0;
 }
 .user-icon {
@@ -120,4 +140,13 @@ body {
 .user-name {
   color: hsl(0, 22%, 91%);
   margin: auto 5px;
+}
+
+.user-name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
