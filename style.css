@@ -52,17 +52,71 @@ body {
   display: flex;
   flex-direction: row;
   /* width: 100%; */
+  margin: 10px 0;
 }
-.icon {
+.price-icon {
   background-image: url("./images/icon-ethereum.svg");
   background-position: center;
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  max-width: 20px;
-  /* margin: auto; */
+  width: 15x;
+  height: 15px;
+  min-width: 15px;
+  max-width: 15px;
+  margin: auto 5px;
 }
 .price {
   color: hsl(178, 100%, 50%);
+  font-size: 15px;
+  margin: 5px 0px;
+  font-weight: 500;
+}
+.time-group {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  margin: 10px 0;
+}
+.time-icon {
+  background-image: url("./images/icon-clock.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 15x;
+  height: 15px;
+  min-width: 15px;
+  max-width: 15px;
+  margin: auto 5px;
+}
+.time {
+  font-size: 16px;
+  margin: 5px 0;
+  color: hsl(215, 51%, 70%);
+  font-weight: 500;
+}
+.hr {
+  background-color: hsl(215, 32%, 27%);
+  height: 2px;
+  min-height: 2px;
+}
+.created-by {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+.user-icon {
+  background-image: url("./images/image-avatar.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.proto {
+  color: hsl(215, 51%, 70%);
+  margin: auto 5px;
+}
+.user-name {
+  color: hsl(0, 22%, 91%);
+  margin: auto 5px;
 }
