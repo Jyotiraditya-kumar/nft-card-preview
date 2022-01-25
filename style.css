@@ -1,0 +1,68 @@
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-width: 375px;
+  height: 100vh;
+  min-height: 100vh;
+}
+.container {
+  width: 100vw;
+  min-width: 375px;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+}
+.card {
+  width: 330px;
+  height: 550px;
+  background-color: hsl(216, 50%, 16%);
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.cube-image {
+  width: 290px;
+  height: 290px;
+  /* margin: 20px; */
+  border-radius: 10px;
+}
+.title {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  margin: 20px 0;
+}
+.description {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+.group {
+  display: flex;
+  justify-content: space-between;
+}
+.price-group {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+}
+.icon {
+  background-image: url("./images/icon-ethereum.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  /* margin: auto; */
+}
+.price {
+  color: hsl(178, 100%, 50%);
+}
